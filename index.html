@@ -1,73 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Stylish Contact Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            text-align: center;
-        }
-        h2 {
-            color: #333;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-        input[type="text"], input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
-        }
-        input[type="submit"]:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="Styles.css">
+    <title>SmaRation</title>
+    </head>
 <body>
-    <div class="container">
-        <h2>Contact Form</h2>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfVetv03JmEVxmJxC7P3Sg6OVENFQzJ4rXsLvISg2D3S1dkdg/formResponse" method="post">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="entry.2005620554" required>
-            
-            <label for="kelas">Kelas:</label>
-            <input type="text" id="kelas" name="entry.1166974658" required>
-            
-            <label for="tujuan">Tujuan</label>
-            <input type="text" id="tujuan" name="entry.1065046570" required>
+  <div classs="logo">
 
-            <label for="pesan">Pesan</label>
-            <input type="text" id="pesan" name="entry.839337160" required>
-            
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+  </div>
+<div class="container">
+<h2>Smafour Aspiration</h2>
+<form action="connect.php" method="POST">
+    <input type="text" id="nama" name="nama" placeholder="Nama" required>
+    <input type="text" id="kelas" name="kelas" placeholder="Kelas" required>
+    <input type="text" id="tujuan" name="tujuan" placeholder="Pendapatmu ditujukan ke" required>
+    <textarea id="message" name="message" rows="6" placeholder="Pesan yang ingin disampaikan" required></textarea>
+       <input type="date" id="date" name="date" required>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
 </body>
 </html>
