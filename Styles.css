@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Updated to white */
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Updated to white */
+    border-radius: 10px; /* Increased border radius for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+h2 {
+    text-align: center; /* Center align the title */
+    color: #4CAF50; /* Updated to green */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4CAF50; /* Updated border color to green */
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Added transition for smoother focus effect */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #388E3C; /* Darker green on focus */
+}
+
+textarea {
+    resize: none;
+}
+
+.instagram-button {
+    display: block; /* Changed to block for full width */
+    width: auto; /* Set width to auto for side layout */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smoother effect */
+}
+
+.instagram-button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05); /* Added scale effect on hover */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Updated button color to green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smoother effect */
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05); /* Added scale effect on hover */
+}
