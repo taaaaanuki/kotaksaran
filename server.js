@@ -28,16 +28,17 @@ db.connect((err) => {
 
 // API endpoint to handle form submissions
 app.post('/submit', (req, res) => {
+    console.log(req.body); // Log the incoming request body for debugging
     const { name, class: className, recipient, message, date } = req.body;
 
-    const submissionData = { name, class: className, recipient, message, date };
-    const query = 'INSERT INTO submissions SET ?';
+    const submissionData = { name, class: className, recipient, message, date, timestamp: new Date() }; // Add timestamp
+    const query = 'INSERT INTO submissions (name, class, recipient, message, date, timestamp) VALUES (?, ?, ?, ?, ?, ?)';
 
-    db.query(query, submissionData, (error, results) => {
+    db.query(query, [name, className, recipient, message, date, new Date()], (error, results) => {
         if (error) {
             return res.status(500).send('Error saving data to database.');
         }
-        res.redirect('thank_you.html');
+        res.redirect('/thank_you.html'); // Ensure the redirect path is absolute
     });
 });
 
