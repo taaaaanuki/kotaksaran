@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="latihan.css">
+    <style>
+        @media (max-width: 600px) {
+            .thank-you-message {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            .checkmark {
+                width: 40px;
+                height: 40px;
+            }
+            .checkmark::after {
+                width: 15px;
+                height: 7px;
+            }
+        }
+        .thank-you-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .checkmark {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #4CAF50;
+            transform: scaleX(-1); /* Flip the checkmark horizontally */
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            animation: checkmark-animation 0.5s ease forwards;
+        }
+        .checkmark::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 10px;
+            border: solid #4CAF50;
+            border-width: 0 5px 5px 0;
+            top: 15px;
+            left: 10px;
+            transform: rotate(45deg);
+            opacity: 0;
+            animation: checkmark-appear 0.5s ease forwards 0.5s;
+        }
+        @keyframes checkmark-animation {
+            from {
+                width: 0;
+                height: 0;
+            }
+            to {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        @keyframes checkmark-appear {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-message">
+        <div class="checkmark"></div>
+        <h1>Thank You!</h1>
+        <p>Your message has been successfully submitted.</p>
+    </div>
+</body>
+</html>
