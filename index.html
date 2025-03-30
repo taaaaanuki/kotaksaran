@@ -9,30 +9,31 @@
 </head>
 
 <body>
-    <div class="form-container">
-        <h1 class="judul">Smaration</h1>
-        <h3 class="judul">Smafour Aspiration</h3>
-        <div class="form-wrapper">
-            <form action="#" method="post">
-                <label for="name">Nama</label>
-                <input type="text" id="name" name="name" required>
+    <div class="form-wrapper">
+        <div class="container">
+    
+</div>
+            <form action="/submit" method="POST" class="form-container">
 
-                <label for="class">Kelas</label>
-                <input type="text" id="class" name="class" required>
+            <h1 class="judul"></h1>
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="recipient">Pesanmu ditujukan ke</label>
-                <input type="text" id="recipient" name="recipient" required>
+            <label for="class">Kelas</label>
+            <input type="text" id="class" name="class" required>
 
-                <label for="message">Pesan</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="recipient">Pesanmu ditujukan ke</label>
+            <input type="text" id="recipient" name="recipient" required>
 
-                <label for="date">Tanggal</label>
-                <input type="date" id="date" name="date" required>
+            <label for="message">Pesan yang ingin disampaikan</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Kirim</button>
-            </form>
-        </div>
+            <label for="date">Tanggal pengiriman</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    <script src="latihan.js"></script>
     </div>
 </body>
-
 </html>
