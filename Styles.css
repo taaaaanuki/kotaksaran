@@ -15,7 +15,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
 }
 
-h2 {
+h1, h3 {
     text-align: center; /* Center align the title */
     color: #4CAF50; /* Updated to green */
 }
